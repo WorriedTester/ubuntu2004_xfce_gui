@@ -6,6 +6,8 @@ Vagrant.configure("2") do |config|
   # Ubuntu 20.04 https://app.vagrantup.com/ubuntu/boxes/focal64
   config.vm.box = "ubuntu/focal64"
 
+  config.ssh.insert_key = false
+  
   # Provider-specific configuration
   config.vm.provider "virtualbox" do |vb|
     # Customize the amount of processors, assigned to this VM
